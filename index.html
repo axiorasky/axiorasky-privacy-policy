@@ -27,116 +27,158 @@
     <header>
       <div class="meta">AxioraSky · Legenda Go</div>
       <h1>Política de Privacidade</h1>
-      <div class="meta">Última atualização: 22 de novembro de 2026</div>
+      <div class="meta">Última atualização: 24 de novembro de 2026</div>
     </header>
 
-    <section class="notice" aria-labelledby="escopo-atual">
-      <h2 id="escopo-atual">1. Escopo desta política</h2>
-      <p>Esta política descreve separadamente o funcionamento da versão atualmente distribuída do Legenda Go e recursos de publicidade planejados para uma atualização futura.</p>
-      <p><strong>Versão atualmente distribuída:</strong> não integra o Google Mobile Ads SDK e não exibe anúncios. A autenticação disponível em variantes internas de desenvolvimento não faz parte do aplicativo oficial distribuído, que não exige login.</p>
-      <p><strong>Publicidade planejada:</strong> anúncios recompensados e um banner adaptativo somente poderão ser ativados em uma futura versão depois da integração técnica, da configuração de consentimento e da atualização das declarações aplicáveis na Google Play. As seções que tratam dessa publicidade não afirmam que os anúncios já estão ativos.</p>
+    <section class="notice" aria-labelledby="aplicativo-responsavel">
+      <h2 id="aplicativo-responsavel">1. Aplicativo e responsável</h2>
+      <p>Esta Política de Privacidade descreve o tratamento de dados no aplicativo Android Legenda Go Tradutor, identificado pelo pacote <code>com.axiorasky.legendago</code> e disponibilizado pela AxioraSky.</p>
+      <p>Para assuntos relacionados à privacidade, entre em contato pelo e-mail público <a href="mailto:axiorasky@gmail.com">axiorasky@gmail.com</a>.</p>
     </section>
 
-    <section aria-labelledby="funcionamento">
-      <h2 id="funcionamento">2. Como o aplicativo funciona</h2>
-      <p>O Legenda Go permite selecionar uma legenda, traduzir texto de inglês para português brasileiro com o Google ML Kit Translate e revisar ou editar o resultado. O texto da legenda e a edição são processados no dispositivo depois que os modelos necessários estão disponíveis.</p>
-      <p>Na primeira abertura, o aplicativo tenta baixar o modelo de tradução inglês–português. Esse download exige conexão e pode usar dados móveis se o dispositivo não estiver conectado a uma rede Wi‑Fi. Depois que o modelo está disponível, a tradução pode ser feita offline. Segundo a documentação do ML Kit, o conteúdo e o resultado da tradução são processados no dispositivo e não são enviados aos servidores do Google para realizar a tradução. O ML Kit pode realizar comunicações relacionadas a modelos, compatibilidade, diagnóstico e métricas técnicas.</p>
+    <section aria-labelledby="finalidade">
+      <h2 id="finalidade">2. Finalidade do aplicativo</h2>
+      <p>O Legenda Go Tradutor permite importar arquivos de legenda SRT e WebVTT, traduzir seu conteúdo do inglês para o português brasileiro, revisar ou editar o resultado e exportar o arquivo traduzido.</p>
+      <p>O aplicativo não exige cadastro ou login e não possui servidor próprio para receber arquivos de legenda, traduções ou edições.</p>
     </section>
 
-    <section aria-labelledby="arquivos-sessoes">
-      <h2 id="arquivos-sessoes">3. Legendas, traduções e sessões</h2>
-      <p>As legendas selecionadas pelo usuário, textos traduzidos, edições, estados de revisão, histórico de desfazer e refazer e informações de sessão são armazenados localmente para permitir edição, continuidade e exportação. O aplicativo não possui servidor próprio para receber esses textos.</p>
-      <p>O seletor de documentos do Android pode acessar um provedor local ou um serviço de nuvem escolhido pelo usuário. Essa transferência decorre da ação do usuário e não de sincronização automática do Legenda Go.</p>
-      <p>O conteúdo das legendas e o resultado das traduções não são enviados ao Google AdMob pela implementação planejada do Legenda Go.</p>
+    <section aria-labelledby="processamento-local">
+      <h2 id="processamento-local">3. Processamento local</h2>
+      <p>O texto original, a tradução e as edições são processados no dispositivo do usuário por meio do Google ML Kit Translate.</p>
+      <p>Segundo a documentação do Google, o conteúdo fornecido às APIs ML Kit e o resultado produzido são processados no aparelho e não são enviados aos servidores Google para realizar a tradução.</p>
+      <p>A AxioraSky não recebe o conteúdo das legendas por um backend próprio.</p>
     </section>
 
-    <section aria-labelledby="franquia">
-      <h2 id="franquia">4. Franquia diária e controle local</h2>
-      <p>O Legenda Go oferece três traduções gratuitas por dia local. Ao iniciar uma tradução, o aplicativo reserva temporariamente uma vaga da franquia para impedir operações simultâneas ou duplicadas. O consumo definitivo ocorre somente no dia local em que a tradução de um arquivo é concluída e seu resultado é validado. Se a tradução falhar ou for cancelada antes da conclusão, a reserva é liberada.</p>
-      <p>Importação, edição, salvamento, reabertura de resultados e exportação não consomem a franquia. Para aplicar esse controle, evitar contagens duplicadas e preservar operações já concluídas, o aplicativo mantém no armazenamento privado local informações como o dia de uso, a quantidade consumida e identificadores internos de operações. Esse controle não exige conta nem envia o conteúdo das legendas para um servidor.</p>
+    <section aria-labelledby="arquivos">
+      <h2 id="arquivos">4. Seleção e exportação de arquivos</h2>
+      <p>A importação e a exportação utilizam o seletor de documentos do Android.</p>
+      <p>O usuário pode escolher arquivos armazenados no aparelho ou disponibilizados por um provedor externo configurado no Android. Quando um provedor de nuvem é escolhido, a comunicação correspondente decorre da ação do usuário e das regras desse provedor, não de sincronização automática do Legenda Go.</p>
+      <p>O arquivo exportado permanece no destino selecionado pelo usuário até que seja apagado ou movido pelo próprio usuário ou pelo provedor escolhido.</p>
+    </section>
+
+    <section aria-labelledby="armazenamento">
+      <h2 id="armazenamento">5. Armazenamento local</h2>
+      <p>O aplicativo pode manter no armazenamento privado:</p>
+      <ul>
+        <li>texto original e traduzido da sessão atual;</li>
+        <li>edições e estados de revisão;</li>
+        <li>histórico necessário para desfazer e refazer alterações;</li>
+        <li>sessões do Modo Qualidade;</li>
+        <li>último resultado preparado para recuperação ou exportação;</li>
+        <li>recibos e identificadores internos de operações;</li>
+        <li>reservas, commits e histórico operacional; e</li>
+        <li>preferências e dados temporários necessários ao funcionamento.</li>
+      </ul>
+      <p>Uma exportação concluída pode limpar a sessão editável e o último resultado quando todas as etapas de limpeza forem bem-sucedidas. Isso não significa que todo registro operacional seja automaticamente apagado após cada exportação.</p>
+      <p>A limpeza dos dados do aplicativo nas configurações do Android ou sua desinstalação remove os dados privados locais de acordo com o funcionamento do sistema.</p>
+    </section>
+
+    <section class="notice" aria-labelledby="traducoes">
+      <h2 id="traducoes">6. Traduções ilimitadas</h2>
+      <p>A versão abrangida por esta política permite traduções ilimitadas.</p>
+      <p>Ela não exige anúncio recompensado, não exibe banner e não aplica limite diário de traduções.</p>
+    </section>
+
+    <section aria-labelledby="ml-kit">
+      <h2 id="ml-kit">7. Google ML Kit e modelos de tradução</h2>
+      <p>O aplicativo usa o Google ML Kit Translate 17.0.3.</p>
+      <p>O modelo necessário é baixado sob demanda. Após o download, a tradução pode funcionar offline enquanto o modelo continuar disponível no dispositivo.</p>
+      <p>O ML Kit pode comunicar-se com servidores Google para:</p>
+      <ul>
+        <li>baixar e atualizar modelos;</li>
+        <li>receber correções e informações de compatibilidade;</li>
+        <li>avaliar recursos de hardware; e</li>
+        <li>enviar métricas técnicas, diagnósticos e informações de utilização do SDK.</li>
+      </ul>
+      <p>O release também contém componentes técnicos transitivos, incluindo Google Data Transport, usados pela infraestrutura do ML Kit.</p>
     </section>
 
     <section aria-labelledby="dados-tecnicos">
-      <h2 id="dados-tecnicos">5. Dados técnicos e identificadores na versão atual</h2>
-      <p>O ML Kit documenta o tratamento de informações técnicas, como fabricante e modelo do dispositivo, versão do sistema e do aplicativo, aceleradores de aprendizado de máquina, eventos de inicialização e download de modelo, latência, tamanhos de entrada e saída e códigos de erro. Para o recurso de tradução, o SDK informa o uso de Firebase Remote Config e Firebase Installations para configuração, diagnóstico e análise.</p>
-      <p>O Firebase Installations gera um Firebase Installation ID (FID), um identificador por instalação que não se destina a identificar exclusivamente uma pessoa ou um dispositivo físico. O código próprio da versão atualmente distribuída não lê IMEI, número de série, Android ID ou Advertising ID.</p>
-    </section>
-
-    <section class="notice" aria-labelledby="publicidade-futura">
-      <h2 id="publicidade-futura">6. Publicidade planejada — ainda não ativa</h2>
-      <p>Uma versão futura poderá utilizar o Google AdMob para exibir:</p>
+      <h2 id="dados-tecnicos">8. Dados técnicos tratados pelo ML Kit</h2>
+      <p>Segundo a documentação do Google, o ML Kit pode tratar:</p>
       <ul>
-        <li>um anúncio recompensado quando as três traduções gratuitas do dia tiverem terminado; e</li>
-        <li>um banner adaptativo discreto na parte inferior da tela inicial.</li>
+        <li>fabricante, modelo, versão e build do dispositivo;</li>
+        <li>nome do pacote e versão do aplicativo;</li>
+        <li>recursos de hardware disponíveis;</li>
+        <li>identificadores técnicos ou por instalação;</li>
+        <li>idiomas de origem e destino configurados;</li>
+        <li>eventos relacionados a inicialização, downloads e recursos;</li>
+        <li>latência e outras métricas de desempenho;</li>
+        <li>configuração e versão da API;</li>
+        <li>tamanhos de entrada e saída, sem o conteúdo textual; e</li>
+        <li>códigos de erro.</li>
       </ul>
-      <p>O anúncio recompensado será solicitado somente após ação explícita do usuário no botão de tradução. Uma tradução adicional será autorizada apenas quando o provedor confirmar a recompensa. Fechar ou cancelar o anúncio antes da recompensa não liberará a tradução.</p>
-      <p>Se nenhum anúncio estiver disponível, o aplicativo informará a indisponibilidade e permitirá uma nova tentativa posterior. A indisponibilidade do anúncio não consumirá uma tradução gratuita nem enviará o arquivo de legenda ao AdMob.</p>
-      <p>O carregamento de anúncios dependerá de conexão com a internet. A tradução pelo ML Kit continuará sendo local depois que o modelo necessário estiver disponível.</p>
+      <p>Esses dados são usados para fornecer, diagnosticar, proteger, manter e melhorar o SDK e analisar sua utilização.</p>
+      <p>O Google informa que esses dados são criptografados em trânsito e não são transferidos a terceiros pelo ML Kit.</p>
+      <p>A versão exata dos componentes internos usados pelo SDK pode mudar quando a dependência for atualizada. Esta política deverá ser revista em qualquer atualização desse tipo.</p>
     </section>
 
-    <section aria-labelledby="dados-publicidade">
-      <h2 id="dados-publicidade">7. Dados que poderão ser tratados pela publicidade futura</h2>
-      <p>Quando o Google Mobile Ads SDK for efetivamente integrado, ele poderá coletar e compartilhar automaticamente informações como endereço IP, localização aproximada derivada do IP, interações com o aplicativo e com anúncios, informações de diagnóstico e identificadores do dispositivo ou da instalação, inclusive o identificador de publicidade quando disponível e permitido.</p>
-      <p>Segundo a documentação do Google, essas informações podem ser utilizadas para publicidade, análise, medição e prevenção de fraude. O tratamento efetivo dependerá da versão do SDK, das configurações adotadas, das escolhas de privacidade do usuário e da disponibilidade de identificadores no dispositivo. O Legenda Go não promete anonimato absoluto desses dados.</p>
-    </section>
-
-    <section aria-labelledby="consentimento">
-      <h2 id="consentimento">8. Consentimento e preferências de privacidade</h2>
-      <p>A integração publicitária planejada deverá consultar o estado de consentimento aplicável antes de solicitar anúncios, respeitar as escolhas do usuário e cumprir os requisitos aplicáveis à sua região. Quando exigido, uma mensagem de privacidade será apresentada por meio da User Messaging Platform do Google, e o aplicativo disponibilizará acesso às opções de privacidade indicadas pelo SDK.</p>
-      <p>A aceitação de anúncios personalizados não será condição para utilizar as três traduções gratuitas do dia. Depois do término da franquia, traduções adicionais poderão depender da disponibilidade de um anúncio recompensado compatível com as escolhas de privacidade registradas.</p>
-      <p>A disponibilidade e o conteúdo das opções de privacidade poderão variar conforme a região, a legislação aplicável e as configurações publicadas pelo desenvolvedor no AdMob. Esses controles ainda não estão ativos na versão atualmente distribuída.</p>
-    </section>
-
-    <section aria-labelledby="finalidades">
-      <h2 id="finalidades">9. Finalidades</h2>
-      <p>Na versão atual, os dados são tratados para:</p>
+    <section aria-labelledby="ausencias">
+      <h2 id="ausencias">9. Ausência de publicidade e autenticação</h2>
+      <p>A versão abrangida por esta política:</p>
       <ul>
-        <li>traduzir legendas localmente e obter ou atualizar modelos;</li>
-        <li>manter sessões, edições, resultados e exportações;</li>
-        <li>aplicar localmente a franquia diária e evitar contagens duplicadas; e</li>
-        <li>diagnosticar falhas, medir desempenho e manter a compatibilidade dos componentes Google.</li>
+        <li>não integra Google Mobile Ads;</li>
+        <li>não integra User Messaging Platform;</li>
+        <li>não utiliza Advertising ID nem AdServices;</li>
+        <li>não exibe anúncios;</li>
+        <li>não exige conta;</li>
+        <li>não utiliza Firebase Authentication;</li>
+        <li>não utiliza Firebase Analytics ou Crashlytics; e</li>
+        <li>não oferece compras ou assinaturas.</li>
       </ul>
-      <p>Na futura versão com anúncios, dados técnicos e interações publicitárias também poderão ser tratados para exibir e medir anúncios e prevenir fraude, conforme as escolhas de privacidade aplicáveis.</p>
+      <p>Firebase Authentication não deve ser confundido com identificadores técnicos ou serviços internos que possam ser utilizados por SDKs Google.</p>
     </section>
 
-    <section aria-labelledby="destinatarios">
-      <h2 id="destinatarios">10. Compartilhamento e destinatários</h2>
-      <p>A versão atualmente distribuída não possui backend próprio, login obrigatório, Google Mobile Ads, Firebase Analytics ou Crashlytics. Dados técnicos podem ser tratados pelo Google por meio do ML Kit e de seus componentes de suporte.</p>
-      <p>Na futura versão com publicidade, o Google AdMob e seus provedores autorizados poderão tratar dados técnicos e interações publicitárias. A classificação de coleta e compartilhamento na Google Play deverá refletir a versão exata dos SDKs e as configurações efetivamente publicadas.</p>
-    </section>
-
-    <section aria-labelledby="seguranca">
-      <h2 id="seguranca">11. Segurança e transmissão</h2>
-      <p>As comunicações dos componentes Google são documentadas como protegidas em trânsito. O aplicativo não possui servidor próprio para receber legendas, traduções ou edições. Nenhum método de transmissão ou armazenamento eletrônico pode, contudo, ser apresentado como absolutamente seguro.</p>
+    <section aria-labelledby="backup">
+      <h2 id="backup">10. Backup e transferência</h2>
+      <p>O aplicativo configura o backup privado como desativado e possui regras que excluem bancos, preferências, sessões e arquivos privados de backup em nuvem e transferência automática entre dispositivos.</p>
+      <p>Essas regras destinam-se a evitar restauração indevida de recibos, sessões, legendas internas e outros estados operacionais.</p>
+      <p>Elas não afetam arquivos que o usuário exportou para um local externo escolhido no seletor de documentos.</p>
+      <p>O comportamento final também pode depender da implementação do Android e do fabricante do dispositivo, razão pela qual não se oferece garantia absoluta sobre serviços externos de backup.</p>
     </section>
 
     <section aria-labelledby="retencao">
-      <h2 id="retencao">12. Retenção e exclusão</h2>
-      <p>O arquivo original permanece no local escolhido pelo usuário. O arquivo exportado permanece no destino escolhido no seletor do Android. Após uma exportação concluída, o Legenda Go pode limpar sua sessão de trabalho; se o usuário cancelar ou a gravação falhar, a sessão pode ser mantida para evitar perda de edições.</p>
-      <p>O estado da franquia diária é armazenado no banco de dados privado do aplicativo. O código atual também contém uma estrutura local preparada para registrar, no futuro, autorizações de uso único após uma recompensa válida, vinculadas internamente à solicitação e ao conteúdo correspondente. Como o Google Mobile Ads ainda não está integrado à versão distribuída, essa preparação local não significa que anúncios ou recompensas reais já estejam ativos.</p>
-      <p>Quando a publicidade for implementada, o estado mínimo dessas autorizações recompensadas também poderá permanecer no banco de dados privado para evitar uso duplicado e preservar uma tentativa após falha técnica. A limpeza dos dados do aplicativo ou sua desinstalação normalmente remove esses registros locais conforme o comportamento do Android.</p>
-      <p>A remoção local não garante a exclusão de informações técnicas ou publicitárias já processadas pelos provedores Google. A retenção e os direitos aplicáveis a esses dados seguem também as políticas dos respectivos provedores.</p>
+      <h2 id="retencao">11. Retenção e exclusão</h2>
+      <p>Dados locais permanecem enquanto forem necessários à continuidade, recuperação, exportação e integridade operacional do aplicativo.</p>
+      <p>O usuário pode remover dados locais:</p>
+      <ul>
+        <li>pelos fluxos de limpeza disponibilizados pelo aplicativo;</li>
+        <li>limpando os dados nas configurações do Android;</li>
+        <li>desinstalando o aplicativo; e</li>
+        <li>apagando manualmente os arquivos exportados.</li>
+      </ul>
+      <p>A remoção local não apaga necessariamente métricas ou dados técnicos que já tenham sido processados pelo Google.</p>
+      <p>O Legenda Go não oferece atualmente um mecanismo capaz de ordenar a exclusão de todos os dados técnicos mantidos pelo Google. A retenção e os controles desses dados seguem também as políticas e mecanismos disponibilizados pelo provedor.</p>
+    </section>
+
+    <section aria-labelledby="seguranca">
+      <h2 id="seguranca">12. Segurança</h2>
+      <p>Dados internos são mantidos no armazenamento privado do Android.</p>
+      <p>As comunicações dos componentes Google são documentadas como protegidas por HTTPS. Apesar das medidas adotadas, nenhum método eletrônico de armazenamento ou transmissão pode ser considerado absolutamente seguro.</p>
+    </section>
+
+    <section aria-labelledby="direitos">
+      <h2 id="direitos">13. Direitos do usuário</h2>
+      <p>Dependendo da legislação aplicável, o usuário pode solicitar informações, correção, oposição ou exclusão de dados sob responsabilidade da AxioraSky por meio de <a href="mailto:axiorasky@gmail.com">axiorasky@gmail.com</a>.</p>
+      <p>Como o aplicativo não possui conta ou backend próprio com conteúdo de legendas, a maior parte do conteúdo fica sob controle direto do usuário no dispositivo.</p>
+      <p>Para dados tratados pelo Google, também se aplicam os canais, controles e políticas desse provedor.</p>
     </section>
 
     <section aria-labelledby="referencias">
-      <h2 id="referencias">13. Referências dos provedores</h2>
+      <h2 id="referencias">14. Serviços de terceiros</h2>
       <ul>
+        <li><a href="https://developers.google.com/ml-kit/terms" rel="noopener noreferrer">Termos e privacidade do ML Kit</a></li>
         <li><a href="https://developers.google.com/ml-kit/android-data-disclosure" rel="noopener noreferrer">Divulgação de dados do ML Kit para Android</a></li>
-        <li><a href="https://developers.google.com/ml-kit/language/translation/android" rel="noopener noreferrer">Tradução de texto com ML Kit no Android</a></li>
-        <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" rel="noopener noreferrer">Divulgação de dados do Google Mobile Ads SDK</a></li>
-        <li><a href="https://developers.google.com/admob/android/privacy" rel="noopener noreferrer">User Messaging Platform e privacidade no AdMob</a></li>
+        <li><a href="https://developers.google.com/ml-kit/language/translation/android" rel="noopener noreferrer">Tradução com ML Kit no Android</a></li>
         <li><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Política de Privacidade do Google</a></li>
+        <li><a href="https://support.google.com/googleplay/android-developer/answer/10787469" rel="noopener noreferrer">Segurança dos dados do Google Play</a></li>
       </ul>
-    </section>
-
-    <section aria-labelledby="contato">
-      <h2 id="contato">14. Contato</h2>
-      <p>Para solicitações de privacidade, entre em contato pelo e-mail público e monitorado <a href="mailto:axiorasky@gmail.com">axiorasky@gmail.com</a>.</p>
     </section>
 
     <section aria-labelledby="alteracoes">
       <h2 id="alteracoes">15. Alterações desta política</h2>
-      <p>Esta política poderá ser atualizada quando o aplicativo, seus SDKs ou as práticas documentadas mudarem. A data de atualização será alterada junto com o conteúdo. A descrição de recursos planejados não significa que eles já estejam disponíveis na versão atualmente distribuída.</p>
+      <p>Esta política poderá ser atualizada quando o aplicativo, seus SDKs, suas práticas ou os requisitos legais e das lojas mudarem.</p>
+      <p>Funcionalidades futuras de publicidade, autenticação, sincronização ou coleta adicional somente deverão ser disponibilizadas depois da atualização correspondente desta política e das declarações aplicáveis.</p>
     </section>
   </main>
 </body>
